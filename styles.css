@@ -102,4 +102,17 @@ label {
   }
 }
 
+/* Header Announcement*/
+
+.announcement {
+  background-color: #bdbdbd;
+  padding: 10px;
+}
+
+.announcement-text {
+  color: #000000;
+  text-align: right;
+  font-size: 13px;
+}
+
 /* SlideShow */
