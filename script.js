@@ -1,6 +1,6 @@
 /* Scroll Sections */
 
-const sections = document.querySelectorAll("section[id]");
+/* const sections = document.querySelectorAll("section[id]");
 
 window.addEventListener("scroll", scrollActive);
 
@@ -22,7 +22,7 @@ function scrollActive() {
         .classList.remove("active");
     }
   });
-}
+} */
 
 
 /* Slideshow animation */

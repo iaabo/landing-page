@@ -1,24 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;600&display=swap");
 
-html,
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
-  max-width: 100vw;
   background-color: #e0dfdf;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /*  height: 100vh; */
+  scroll-snap-align: center;
 }
 
 button {
   font-family: "Nunito Sans", sans-serif;
-}
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 a {
@@ -28,17 +41,19 @@ a {
 
 /* Navbar */
 
-header {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1;
   padding: 0 30px;
+  height: 70px;
   width: 100%;
   box-sizing: border-box;
+  background-color: #e0dfdf;
 }
 
-header .logo {
+.navbar .logo {
   text-decoration: none;
   color: #fff;
   float: left;
@@ -63,8 +78,8 @@ header .logo {
 }
 
 .menu :hover {
-  border-top: 2px solid #bcc897;
-  border-bottom: 2px solid #bcc897;
+  border-top: 2px solid #7f807e;
+  border-bottom: 2px solid #7f807e;
   padding: 6px 0;
 }
 
@@ -92,7 +107,7 @@ label {
   .menu a {
     display: block;
     margin: 0;
-    opacity: 0.5;
+    opacity: 0.8;
     background-color: #c2c1c1;
     color: #000000;
     line-height: 50px;
@@ -110,6 +125,7 @@ label {
 .announcement {
   background-color: #bdbdbd;
   padding: 10px;
+  margin-top: 90px;
   display: absolute;
 }
 
@@ -121,23 +137,17 @@ label {
 
 /* SlideShow */
 
-.slideshow {
-  margin-top: 100px;
-  height: 500px;
-}
-
-/* Slideshow container */
 .slideshow-container {
-  max-width: auto;
   position: relative;
-  margin: 30px 30px;
-  max-height: auto;
 }
+/*   margin: 30px 30px; */
 
 .slideshow-container img {
   opacity: 0.8;
+  position: relative;
+  max-width: auto;
+  max-height: auto;
 }
-
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -151,7 +161,7 @@ label {
   position: absolute;
   top: 70%;
   right: 5%;
-  width: 100%;
+  /*  width: 100%; */
   text-align: right;
 }
 
@@ -173,7 +183,7 @@ label {
   margin-left: 3%;
   position: absolute;
   top: 40%;
-  width: 100%;
+  /*   width: 100%; */
   text-align: left;
 }
 
@@ -217,16 +227,15 @@ label {
 /* About */
 
 .about {
-  height: 100%;
-  background-color: #bdbdbd;
-  margin: 2.5%;
+  /*   height: 100%; */
+  /*   margin: 2.5%; */
 }
 
 .about-container {
   justify-items: center;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 14px;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 .about img {
@@ -249,4 +258,60 @@ label {
 .about-profession {
   display: block;
   margin-bottom: var(--mb-4);
+}
+
+.about-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  background-color: #bdbdbd;
+}
+
+.about-anos {
+  background-color: #b0be77;
+  padding: 20px;
+}
+
+.about-clients {
+  background-color: #b0be77;
+  padding: 20px;
+}
+
+.about-artigos {
+  background-color: #b0be77;
+  padding: 20px;
+}
+
+/*Plans*/
+
+
+
+.plans-title {
+  text-align: center;
+}
+
+.plans-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  line-height: 3;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.plan-anual {
+  background-color: #b0be77;
+
+  padding: 60px;
+}
+
+.plan-semestral {
+  background-color: #b0be77;
+
+  padding: 60px;
 }
