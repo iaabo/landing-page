@@ -376,3 +376,38 @@ label {
   border-radius: 5px;
   background: #b0be77;
 }
+
+/* Contacts */
+
+.contact-title {
+  text-align: center;
+}
+
+.contacts-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  line-height: 2;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.contact {
+  background-color: #c2c1c1;
+  padding: 60px;
+  color: #3f4620;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.horario-title {
+  color: #3f4620;
+}
+
+.horario {
+  background-color: #b0be77;
+  padding: 60px;
+  color: #373636;
+  
+}
