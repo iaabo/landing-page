@@ -243,6 +243,7 @@ label {
   height: 150px;
   border-radius: 50%;
   border: 4px solid #b0be77;
+  
 }
 
 .about-subtitle {
@@ -267,27 +268,29 @@ label {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 200px;
-  background-color: #bdbdbd;
+ /*  background-color: #bdbdbd; */
+  
 }
 
 .about-anos {
   background-color: #b0be77;
   padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about-clients {
   background-color: #b0be77;
   padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about-artigos {
   background-color: #b0be77;
   padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*Plans*/
-
-
 
 .plans-title {
   text-align: center;
@@ -305,13 +308,33 @@ label {
 }
 
 .plan-anual {
-  background-color: #b0be77;
-
+  background-color: #c2c1c1;
   padding: 60px;
+  color: #3f4620;
+ 
+}
+
+.about-8 {
+  color: #3f4620;
+}
+
+.plan-anual button {
+  background-color: #b0be77;
+  border: 1px solid #000000;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.plan-semestral button {
+  background-color: #c2c1c1;
+  border: 1px solid #000000;
+  padding: 10px;
+  font-weight: bold;
 }
 
 .plan-semestral {
   background-color: #b0be77;
-
   padding: 60px;
+  color: #373636;
+  
 }
