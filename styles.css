@@ -176,6 +176,11 @@ label {
   margin-top: 10px;
 }
 
+.text button:hover {
+  background-color: #b0be77;
+  border: 2px solid #000000;
+}
+
 .text-2 {
   color: #0e0d0d;
   font-size: 25px;
@@ -196,6 +201,11 @@ label {
   text-decoration: none;
   font-size: 20px;
   margin-top: 10px;
+}
+
+.text-2 button:hover {
+  background-color: #b0be77;
+  border: 2px solid #000000;
 }
 
 /* Fading animation */
@@ -301,9 +311,11 @@ label {
   padding: 30px;
   line-height: 3;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 100px;
+  height: 100vh;
 }
+/*  margin-top: 20px;
+  margin-bottom: 100px;
+} */
 
 .plan-anual {
   background-color: #c2c1c1;
@@ -322,6 +334,11 @@ label {
   font-weight: bold;
 }
 
+.plan-anual button:hover {
+  background-color: #c2c1c1;
+  border: 1px solid #fff;
+}
+
 .plan-semestral button {
   background-color: #c2c1c1;
   border: 1px solid #000000;
@@ -329,6 +346,10 @@ label {
   font-weight: bold;
 }
 
+.plan-semestral button:hover {
+  background-color: #b0be77;
+  border: 1px solid #fff;
+}
 .plan-semestral {
   background-color: #b0be77;
   padding: 60px;
@@ -338,15 +359,15 @@ label {
 /* Marcar consulta */
 
 .book {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  height: 500px;
+  margin-bottom: 200px;
 }
 
 .book-container {
   text-align: center;
   background: url("images/4.jpg");
   opacity: 0.6;
-  height: 500px;
+  height: 600px;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -354,7 +375,7 @@ label {
 }
 
 .book-inputs {
-  margin-top: 200px;
+  margin-top: 12%;
   color: #3f4620;
 }
 
@@ -375,6 +396,12 @@ label {
   border: transparent;
   border-radius: 5px;
   background: #b0be77;
+}
+
+.book-form-button button:hover {
+  background: #fff;
+  border: 2px solid #b0be77;
+  cursor: pointer;
 }
 
 /* Contacts */
@@ -409,5 +436,64 @@ label {
   background-color: #b0be77;
   padding: 60px;
   color: #373636;
-  
+}
+
+/* Faqs */
+
+.faqs-container {
+  height: 400px;
+  margin: 100px 100px;
+}
+
+.faqs-inputs h1 {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #b0be77;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: #3f4620;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #bdbdbd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+/* .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+} */
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  display: none;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: "\25BC";
+  font-size: 10px;
+  color: #373636;
+  float: right;
+  margin-left: 5px;
+}
+
+.faq-container {
+  margin-bottom: 20px;
 }
