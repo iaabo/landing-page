@@ -94,7 +94,7 @@ label {
   display: none;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 783px) {
   label {
     display: block;
     cursor: pointer;
@@ -107,7 +107,7 @@ label {
   .menu a {
     display: block;
     margin: 0;
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: #c2c1c1;
     color: #000000;
     line-height: 50px;
@@ -404,6 +404,12 @@ label {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 783px) {
+  .book-inputs {
+    margin-top: 22%;
+  }
+}
+
 /* Contacts */
 
 .contact-title {
@@ -501,9 +507,19 @@ label {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 783px) {
+  .panel {
+    font-size: 14px;
+  }
+  .faqs-container {
+    margin-bottom: 200px;
+  }
+}
+
 /* Footer */
 
 .footer {
+  margin-top: 10px;
   background-color: #222909;
   color: #fff;
   padding: 10px;
