@@ -443,16 +443,19 @@ label {
 .faqs-container {
   height: 400px;
   margin: 100px 100px;
+  margin-bottom: 140px;
 }
 
 .faqs-inputs h1 {
   text-align: center;
   padding: 40px;
+  color: #1d3109;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #b0be77;
+  font-size: 15px;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -496,4 +499,12 @@ label {
 
 .faq-container {
   margin-bottom: 20px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #222909;
+  color: #fff;
+  padding: 10px;
 }
